@@ -1,0 +1,236 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: block;
+  background-color: #0e4166;
+  background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
+}
+
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+/* Estilos para el encabezado */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Estilos para el contenedor del formulario */
+.form-container {
+  max-width: 400px;
+  margin: 70px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease-in-out;
+}
+
+h2 {
+  margin: 0 0 20px;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+/* Estilos para el formulario */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"] {
+  padding: 10px;
+  background-color: #ff5e5e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #ff3b3b;
+}
+
+/* Estilos para los enlaces */
+a.register-link,
+a.login-link {
+  color: #ff5e5e;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a.register-link:hover,
+a.login-link:hover {
+  color: #ff3b3b;
+}
+
+/* Estilos para los párrafos */
+p {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+  color: #777;
+}
+
+/* Estilos para los enlaces generales */
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Animación para el fondo dinámico */
+body {
+  animation: dynamicBackground 10s infinite;
+}
+
+@keyframes dynamicBackground {
+  0% {
+    background-color: #ff5e5e; /* Color inicial */
+  }
+  50% {
+    background-color: #6eff98; /* Color intermedio */
+  }
+  100% {
+    background-color: #a66f3c; /* Color final */
+  }
+}
+
+/* Estilos para el footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+/* Estilos para el contenedor del footer */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para los enlaces del footer */
+.container a {
+  font-size: 1em;
+  background-color: #000000;
+  color: #fff;
+  box-shadow: 0 0 10px #00f, 0 0 20px #00f, inset 0 0 20px #00f;
+  border-radius: 29px;
+  padding: 11px 19px;
+  margin-right: 20px; /* Ajusta el espaciado entre los iconos */
+  animation: animate 3s linear infinite;
+  text-shadow: 0 0 50px #00f, 0 0 100px #00f, 0 0 150px #00f, 0 0 200px #00f;
+}
+
+/* Estilos para la animación de los enlaces */
+@keyframes animate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+/* Estilos específicos para los iconos de redes sociales */
+#whatsapp {
+  font-size: 1em;
+  background-color: #000000;
+  color: #fff;
+  box-shadow: 0 0 10px #00f, 0 0 20px #00f, inset 0 0 20px #00f;
+  border-radius: 29px;
+  padding: 11px 19px;
+  margin-right: 10px; /* Ajusta el espaciado entre los iconos */
+  animation: animate 3s linear infinite;
+  text-shadow: 0 0 50px #00f, 0 0 100px #00f, 0 0 150px #00f, 0 0 200px #00f;
+}
+
+#whatsapp {
+  animation-delay: 0.3s;
+}
+
+#facebook {
+  animation-delay: 0.7s;
+}
+
+#github {
+  animation-delay: 0.1s;
+}
+
+/* Animación de entrada y salida de formularios */
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  display: none;
+}
+
+.slide-in {
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide-out {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  display: none;
+}

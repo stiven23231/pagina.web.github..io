@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Menú Lateral</title>
+  <link rel="stylesheet" href="style4.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Incluir los archivos de SweetAlert2 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.17/dist/sweetalert2.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.17/dist/sweetalert2.all.min.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="btn-menu">
+        <label for="btn-menu">☰</label>
+      </div>
+      <div class="logo">
+        <h1>Menu</h1>
+      </div>
+    </div>
+  </header>
+  <div class="capa"></div>
+
+  <input type="checkbox" id="btn-menu">
+  <div class="container-menu">
+    <div class="cont-menu">
+      <nav>
+        <ul>
+          <li><a href="inicio.html">inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="acerca de nosotros.html">Sobre Nosotros</a></li>
+        </ul>
+      </nav>
+      <label for="btn-menu">✖️</label>
+    </div>
+  </div>
+
+  <section id="products">
+    <h2>Tipo de planes Disponibles</h2>
+    <div class="pricing-container">
+      <div class="pricing-card">
+        <img src="img/n.jpg" alt="Proyecto 1">
+        <div class="pricing-details">
+          <h3>Proyecto 1</h3>
+          <p>Adquiere tu plan por 10,000 pesos</p>
+          <a href="#" class="btn-comprar">Comprar Plan</a>
+        </div>
+      </div>
+      <div class="pricing-card">
+        <img src="img/e.jpg" alt="Proyecto 2">
+        <div class="pricing-details">
+          <h3>Proyecto 2</h3>
+          <p>Adquiere tu plan por 30,000 pesos</p>
+          <a href="#" class="btn-comprar">Comprar Plan</a>
+        </div>
+      </div>
+      <div class="pricing-card">
+        <img src="img/r.jpg" alt="Proyecto 3">
+        <div class="pricing-details">
+          <h3>Proyecto 3</h3>
+          <p>Adquiere tu plan por 50,000 pesos</p>
+          <a href="#" class="btn-comprar">Comprar Plan</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Derechos de Autor &copy; [2023] | Proyecto personal</p>
+    <div class="container">
+      <a href="#" class="fab fa-whatsapp" id="whatsapp" target="_blank"></a>
+      <a href="#" class="fab fa-twitter" id="twitter" target="_blank"></a>
+      <a href="#" class="fab fa-github-square github" id="github" target="_blank"></a>
+      <a href="#" class="fab fa-facebook-square" id="facebook" target="_blank"></a> 
+    </div>
+  </footer>
+
+  <script src="productos.js"></script>
+ 
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Menù Lateral</title>
+	<link rel="stylesheet" href="style5.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<style>
+		.arrow-down-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 100px;
+		}
+
+		.arrow-down {
+			font-size: 100px;
+			color: #82a7e8;
+			animation: beat 1s infinite;
+		}
+
+		@keyframes beat {
+			0% {
+				transform: scale(1);
+			}
+			50% {
+				transform: scale(1.2);
+			}
+			100% {
+				transform: scale(1);
+			}
+		}
+
+		.contact-text {
+			margin-left: 10px;
+			font-size: 24px;
+			color: #82a7e8;
+		}
+	</style>
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="btn-menu">
+				<label for="btn-menu">☰</label>
+			</div>
+			<div class="logo">
+				<h1>Menu</h1>
+			</div>
+		</div>
+	</header>
+	<div class="capa"></div>
+<!--	--------------->
+	<input type="checkbox" id="btn-menu">
+	<div class="container-menu">
+		<div class="cont-menu">
+			<nav>
+				<ul>
+					<li><a href="inicio.html">inicio</a></li>
+					<li><a href="productos.html">Productos</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+					<li><a href="acerca de nosotros.html">Sobre Nosotros</a></li>
+				</ul>
+			</nav>
+			<label for="btn-menu">✖️</label>
+		</div>
+	</div>
+
+	<section id="contact">
+		<h2>Contacto</h2>
+		<p>¡Estamos aquí para responder a tus preguntas! Ponte en contacto con nosotros para obtener más información sobre nuestros productos o cualquier otra consulta que puedas tener.</p>
+		<p>Para comunicarte con nosotros, llámanos al: 3138865942 o envíanos un correo electrónico a: wilnerm42@gmail.com</p>
+	</section>
+	
+	<div class="arrow-down-container">
+		<i class="fas fa-arrow-down arrow-down"></i>
+		<span class="contact-text">Contactos</span>
+	</div>
+
+	<footer>
+		<p>Derechos de Autor &copy; [2023] | Proyecto personal</p>
+		<div class="container">
+			<a href="#" class="fab fa-whatsapp" id="whatsapp" target="_blank"></a>
+			<a href="#" class="fab fa-twitter" id="twitter" target="_blank"></a>
+			<a href="#" class="fab fa-github-square github" id="github" target="_blank"></a>
+			<a href="#" class="fab fa-facebook-square" id="facebook" target="_blank"></a> 
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar sesión -Proyecto personal</title>
+  <link rel="stylesheet" href="STYLE.CSS">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+  <!-- Incluir los archivos de SweetAlert2 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.17/dist/sweetalert2.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.17/dist/sweetalert2.all.min.js"></script>
+</head>
+<body class="background-image">
+  <header>
+    <h1>Proyecto personal- Inicio de sesion</h1>
+  </header>
+  
+  <section class="form-container fade-in" id="login">
+    <h2>Iniciar sesión</h2>
+    <form id="login-form">
+      <div>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit" id="btnIniciarSesion">Iniciar sesión</button>
+      <p>No tienes una cuenta? <a href="#" id="register-link" class="register-link">Regístrate</a></p>
+      <p><a href="#" id="forgot-password-link" class="forgot-password-link">¿Olvidé mi contraseña?</a></p>
+    </form>
+  </section>
+  
+  <section class="form-container" id="register" style="display: none;">
+    <h2>Registrarse</h2>
+    <form id="register-form">
+      <div>
+        <label for="fullname">Nombre completo:</label>
+        <input type="text" id="fullname" name="fullname" required>
+      </div>
+      <div>
+        <label for="emailRegister">Correo electrónico:</label>
+        <input type="email" id="emailRegister" name="email" required>
+      </div>
+      <div>
+        <label for="usernameRegister">Nombre de usuario:</label>
+        <input type="text" id="usernameRegister" name="username" required>
+      </div>
+      <div>
+        <label for="passwordRegister">Contraseña:</label>
+        <input type="password" id="passwordRegister" name="password" required>
+      </div>
+      <button type="submit">Registrarse</button>
+      <p>Ya tienes una cuenta? <a href="#" id="login-link" class="login-link">Iniciar sesión</a></p>
+    </form>
+  </section>
+  
+  <footer>
+    <p>Derechos de Autor &copy; [2023] |Proyecto personal</p>
+    <div class="container">
+        <a href="#" class="fab fa-whatsapp" id="whatsapp" target="_blank"></a>
+        <a href="#" class="fab fa-twitter" id="twitter" target="_blank"></a>
+        <a href="#" class="fab fa-github-square github" id="github" target="_blank"></a>
+        <a href="#" class="fab fa-facebook-square" id="facebook" target="_blank"></a> 
+    </div>
+</footer>
+
+<script src="script.js"></script>
+  
+  <script src="STYLE.JS"></script>
+  
+  
+</body>
+</html>
